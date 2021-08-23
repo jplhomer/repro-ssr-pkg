@@ -1,5 +1,5 @@
-const { renderToString } = require("react-dom/server");
+import { renderToString } from "react-dom/server";
 
-module.exports.render = (app) => {
+export function render(app) {
   return renderToString(app);
-};
+}
